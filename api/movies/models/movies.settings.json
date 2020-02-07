@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "movies",
+  "info": {
+    "name": "Movies"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "imdbID": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 9,
+      "minLength": 9,
+      "default": "ImdbID"
+    },
+    "DeleteFlag": {
+      "type": "boolean"
+    },
+    "Watched": {
+      "type": "boolean"
+    },
+    "Genre": {
+      "type": "string"
+    },
+    "Movie": {
+      "type": "string"
+    }
+  }
+}
